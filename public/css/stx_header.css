@@ -1,0 +1,36 @@
+.head-bar {
+    flex: 0 1 60px;
+    background-color: rgba(255, 255, 255,0);
+    padding: 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+    color: #fff;
+}
+
+.head-bar:hover{
+    background-color: #fff;
+    color:#000;
+}
+
+.head-bar .head-title {
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+.head-bar .head-title .head-title-text {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.4em;
+    color: inherit;
+}
+
+.head-bar .head-tools {
+    flex:0 1 auto;
+}

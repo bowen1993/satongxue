@@ -1,0 +1,45 @@
+.btn-plain{
+    background-color: none;
+    color: inherit;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+
+.btn-plain:hover{
+    color: #4caf50;
+}
+
+.btn-plain:active{
+    outline: none;
+    box-shadow: none;
+}
+
+a {
+  color:inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.slogn-area{
+    margin: 10px;
+}
+
+.slogn-area-account{
+    flex:1 0 auto;
+}
+
+.slogn-area span.slogn{
+    font-size: 2em;
+    line-height: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.v-btn-area{
+    width:60%;
+    padding: 10px;
+}
+
+.v-btn-area-account{
+    flex:3 0 auto;
+}
