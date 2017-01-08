@@ -1,61 +1,11 @@
-html,
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    font-family:"Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-
-body{
-    background: linear-gradient(to bottom, #134E5E, #71B280);
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-}
-
-
-div#main{
-    width: 100%;
-    height:100%; 
-    
-}
-
-.btn-plain{
-    background-color: none;
-    color: inherit;
-    font-size: 1.1em;
-    line-height: 1.2em;
-    font-weight: bold;
-}
-
-.btn-plain:hover{
-    color: #4caf50;
-}
-
-.btn-plain:active{
-    outline: none;
-    box-shadow: none;
-}
-
-a {
-  color:inherit; /* blue colors for links too */
-  text-decoration: inherit; /* no underline */
-}
-
-/*.login-box{
+<style scoped>
+.login-box{
     width:60%;
     flex: 1 0 auto;
     display:flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
 }
 
 .login-box .title-area{
@@ -136,8 +86,33 @@ a {
     flex: 1 0 auto;
     color:#fff;
 }
+</style>
 
-div.tabs-box{
-    flex:2 0 auto;
-    
-}*/
+<template>
+    <div class="login-box">
+        <div class="title-area">
+            <img src="../assets/logo_white_small.png" alt="" class="title-img responsive-img">
+            <h2 class="title-text">登录仨同学</h2>
+        </div>
+        <div class="input-area">
+            <input type="text" class="input-login input-login-top">
+            <input type="password" class="input-login input-login-bottom">
+        </div>
+        <div class="footer-area">
+            <div class="footer-item">
+                <a href="" class="plain-link">忘记密码？</a>
+            </div>
+            <div class="footer-item">
+                <span>没有账户? <a href="" class="plain-link">注册一个</a> / <a href="" class="plain-link">Continue as a guest</a></span>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        data(){
+            return {}
+        }
+    }
+</script>

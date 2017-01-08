@@ -4,8 +4,8 @@ const path = require('path')
 module.exports = {
     entry: './src/main.js',
     output:{
-        path: path.resolve(__dirname, '../dist'),
-        publicPath: '/dist/',
+        path: path.resolve(__dirname, '../public/dist'),
+        publicPath: '/static/dist/',
         filename: 'build.js'
     },
     resolve:{

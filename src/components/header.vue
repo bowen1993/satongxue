@@ -13,21 +13,22 @@
         flex-flow: row;
         color: #fff;
     }
-    .head-bar .head-title{
+    .header-bar .head-title{
         text-align: left;
         flex:1 1 auto;
     }
-    .head-bar .head-title .head-title-text {
-        text-align: center;
+    .header-bar .head-title .head-title-text {
+        text-align: left;
         font-size: 1.5em;
         font-weight: bold;
         line-height: 1.4em;
         color: inherit;
     }
 
-    .head-bar .head-tools {
-        flex:0 0 auto;
+    .header-bar .head-tools {
+        flex:0 1 auto;
     }
+    
 </style>
 
 <template>
@@ -36,7 +37,7 @@
             <span class="head-title-text">{{title}}</span>
         </div>
         <div class="head-tools">
-            <a v-for="item in tools" href="" v-on:click="item.handle_click" class="btn btn-plain">{{item.text}} </a>
+            <a v-for="item in tools" href="" v-on:click="item.handle_click" class="btn-plain">{{item.text}} </a>
         </div>
     </div>
 </template>
@@ -45,10 +46,6 @@
     export default {
         data(){
             return {}
-        },
-        ready(){
-            console.log(this.title);
-            console.log(this.tools);
         },
         props: ['title', 'tools']
     }
