@@ -1,6 +1,6 @@
 .head-bar {
     flex: 0 1 60px;
-    background-color: rgba(255, 255, 255,0);
+    background-color: rgba(80, 80, 80, 0.8);
     padding: 10px;
     display: -webkit-box;
     display: -moz-box;
@@ -13,13 +13,8 @@
     color: #fff;
 }
 
-.head-bar:hover{
-    background-color: #fff;
-    color:#000;
-}
-
 .head-bar .head-title {
-    text-align: center;
+    text-align: left;
     flex: 1 1 auto;
 }
 
