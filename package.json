@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "build": "export NODE_ENV=production && webpack --config build/webpack.config.js --progress --hide-modules",
+    "buildstart": "npm build && npm start"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -12,6 +14,28 @@
     "express": "~4.13.1",
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "vue": "^2.1.8"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-runtime": "^6.20.0",
+    "consolidate": "^0.14.5",
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.9.0",
+    "path": "^0.12.7",
+    "style-loader": "^0.13.1",
+    "template-html-loader": "^1.0.0",
+    "vue-hot-reload-api": "^2.0.7",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^10.0.2",
+    "vue-template-compiler": "^2.1.8",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }
